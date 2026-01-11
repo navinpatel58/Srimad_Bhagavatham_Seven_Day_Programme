@@ -1,0 +1,279 @@
+/* CSS Document */
+/* style.css - Common styles for all 7 days */
+
+/* ===== RESET & BASE STYLES ===== */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: 'Open Sans', sans-serif;
+    line-height: 1.6;
+    color: #333;
+    background: linear-gradient(135deg, #f5f7fa 0%, #c3cfe2 100%);
+    min-height: 100vh;
+}
+body.day-2 .chapter-number { background: #4CAF50; }
+h1, h2, h3, h4, h5, h6 {
+    font-family: 'Merriweather', serif;
+    font-weight: 700;
+}
+
+/* ===== CALENDAR & NAVIGATION STYLES ===== */
+.calendar-container {
+    width: 100%;
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 1rem;
+}
+
+.calendar-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 1rem;
+    border-radius: 15px;
+    display: flex;
+    justify-content: flex-start;
+    align-items: center;
+    box-shadow: 0 10px 30px rgba(102, 126, 234, 0.3);
+    margin-bottom: 2rem;
+}
+
+.back-btn {
+    background: rgba(255,255,255,0.2);
+    color: white;
+    border: 2px solid white;
+    padding: 0.5rem 1rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.back-btn:hover {
+    background: white;
+    color: #667eea;
+}
+
+/* Day-specific header colors */
+body.day-1 .calendar-header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+body.day-2 .calendar-header { background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%); }
+body.day-3 .calendar-header { background: linear-gradient(135deg, #2196F3 0%, #0D47A1 100%); }
+body.day-4 .calendar-header { background: linear-gradient(135deg, #9C27B0 0%, #6A1B9A 100%); }
+body.day-5 .calendar-header { background: linear-gradient(135deg, #FF5722 0%, #D84315 100%); }
+body.day-6 .calendar-header { background: linear-gradient(135deg, #009688 0%, #00695C 100%); }
+body.day-7 .calendar-header { background: linear-gradient(135deg, #673AB7 0%, #4527A0 100%); }
+
+/* ===== PAGE HEADER STYLES ===== */
+.page-header {
+    background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+    color: white;
+    padding: 3rem 2rem;
+    text-align: center;
+    border-radius: 0 0 20px 20px;
+    margin-bottom: 2rem;
+}
+
+.page-header h1 {
+    font-size: 2.5rem;
+    margin-bottom: 1rem;
+}
+
+.page-header p {
+    font-size: 1.2rem;
+    max-width: 800px;
+    margin: 0 auto;
+    opacity: 0.9;
+}
+
+/* Day-specific header colors */
+body.day-1 .page-header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%); }
+body.day-2 .page-header { background: linear-gradient(135deg, #4CAF50 0%, #2E7D32 100%); }
+body.day-3 .page-header { background: linear-gradient(135deg, #2196F3 0%, #0D47A1 100%); }
+body.day-4 .page-header { background: linear-gradient(135deg, #9C27B0 0%, #6A1B9A 100%); }
+body.day-5 .page-header { background: linear-gradient(135deg, #FF5722 0%, #D84315 100%); }
+body.day-6 .page-header { background: linear-gradient(135deg, #009688 0%, #00695C 100%); }
+body.day-7 .page-header { background: linear-gradient(135deg, #673AB7 0%, #4527A0 100%); }
+
+/* ===== CONTENT CONTAINER STYLES ===== */
+.chapter-container {
+    max-width: 1200px;
+    margin: 0 auto;
+    padding: 0 2rem;
+}
+
+/* ===== CHAPTER SECTION STYLES ===== */
+.chapter-section {
+    background: white;
+    border-radius: 15px;
+    padding: 2rem;
+    margin-bottom: 2rem;
+    box-shadow: 0 5px 20px rgba(0,0,0,0.1);
+}
+
+/* Day-specific border colors */
+body.day-1 .chapter-section { border-left: 5px solid #667eea; }
+body.day-2 .chapter-section { border-left: 5px solid #4CAF50; }
+body.day-3 .chapter-section { border-left: 5px solid #2196F3; }
+body.day-4 .chapter-section { border-left: 5px solid #9C27B0; }
+body.day-5 .chapter-section { border-left: 5px solid #FF5722; }
+body.day-6 .chapter-section { border-left: 5px solid #009688; }
+body.day-7 .chapter-section { border-left: 5px solid #673AB7; }
+
+.chapter-title {
+    color: #333;
+    font-family: 'Merriweather', serif;
+    border-bottom: 2px solid #f2d790;
+    padding-bottom: 0.5rem;
+    margin-bottom: 1.5rem;
+}
+
+/* ===== AUDIO ITEM STYLES ===== */
+.audio-item {
+    background: #f8f9fa;
+    padding: 1rem;
+    margin-bottom: 1rem;
+    border-radius: 10px;
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+    transition: all 0.3s;
+}
+
+.audio-item:hover {
+    transform: translateX(5px);
+}
+
+/* Day-specific hover colors */
+body.day-1 .audio-item:hover { background: #fff9e6; }
+body.day-2 .audio-item:hover { background: #E8F5E9; }
+body.day-3 .audio-item:hover { background: #E3F2FD; }
+body.day-4 .audio-item:hover { background: #F3E5F5; }
+body.day-5 .audio-item:hover { background: #FFEBEE; }
+body.day-6 .audio-item:hover { background: #E0F2F1; }
+body.day-7 .audio-item:hover { background: #EDE7F6; }
+
+.chapter-number {
+    background: #d4af37;
+    color: white;
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: bold;
+    font-size: 0.8rem;
+}
+
+/* Day-specific badge colors */
+body.day-1 .chapter-number { background: #d4af37; }
+body.day-2 .chapter-number { background: #4CAF50; }
+body.day-3 .chapter-number { background: #2196F3; }
+body.day-4 .chapter-number { background: #9C27B0; }
+body.day-5 .chapter-number { background: #FF5722; }
+body.day-6 .chapter-number { background: #009688; }
+body.day-7 .chapter-number { background: #673AB7; }
+
+.audio-content {
+    flex: 1;
+}
+
+audio {
+    flex: 1;
+    height: 40px;
+    min-width: 250px;
+}
+
+/* ===== BUTTON STYLES ===== */
+.btn-primary {
+    background: linear-gradient(135deg, #f2d790 0%, #d4af37 100%);
+    color: #333;
+    padding: 0.8rem 2rem;
+    border-radius: 50px;
+    text-decoration: none;
+    font-weight: bold;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+    transition: all 0.3s;
+    border: none;
+    cursor: pointer;
+    box-shadow: 0 5px 15px rgba(212, 175, 55, 0.3);
+}
+
+.btn-primary:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 8px 25px rgba(212, 175, 55, 0.4);
+}
+
+.read-more {
+    background: #f2d790;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.read-more:hover {
+    background: #d4af37;
+    color: white;
+}
+
+/* ===== FOOTER STYLES ===== */
+.page-footer {
+    background: #333;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.page-footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* ===== NAVIGATION CONTROLS ===== */
+.navigation-controls {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0;
+    padding: 0 1rem;
+}
+
+/* ===== RESPONSIVE DESIGN ===== */
+@media (max-width: 768px) {
+    .audio-item {
+        flex-direction: column;
+        align-items: flex-start;
+        gap: 1rem;
+    }
+    
+    audio {
+        width: 100%;
+        min-width: 100%;
+    }
+    
+    .page-header h1 {
+        font-size: 2rem;
+    }
+    
+    .page-header p {
+        font-size: 1rem;
+    }
+    
+    .chapter-container {
+        padding: 0 1rem;
+    }
+}
