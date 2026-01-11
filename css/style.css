@@ -277,3 +277,90 @@ audio {
         padding: 0 1rem;
     }
 }
+/* Add these to your CSS file */
+
+/* For the new chapter info structure */
+.chapter-info {
+    flex: 1;
+}
+
+.canto-chapter {
+    font-size: 0.9rem;
+    color: #666;
+    margin-top: 0.25rem;
+}
+
+/* Navigation buttons */
+.nav-buttons {
+    display: flex;
+    justify-content: space-between;
+    margin: 3rem 0;
+    padding: 0 1rem;
+    gap: 1rem;
+}
+
+/* Style for the "Open" links */
+.read-more {
+    background: #f2d790;
+    color: #333;
+    padding: 0.5rem 1rem;
+    border-radius: 5px;
+    text-decoration: none;
+    font-size: 0.9rem;
+    transition: all 0.3s;
+    display: inline-flex;
+    align-items: center;
+    gap: 0.5rem;
+}
+
+.read-more:hover {
+    background: #d4af37;
+    color: white;
+}
+
+/* Fix footer class */
+.page-footer {
+    background: #333;
+    color: white;
+    padding: 2rem;
+    text-align: center;
+    margin-top: 3rem;
+}
+
+.page-footer-content {
+    max-width: 800px;
+    margin: 0 auto;
+}
+
+/* Remove duplicate line at top of CSS */
+/* Delete this line: body.day-2 .chapter-number { background: #4CAF50; } */
+
+/* Improve accessibility */
+.btn-primary:focus,
+.back-btn:focus,
+.read-more:focus {
+    outline: 3px solid rgba(0, 123, 255, 0.5);
+    outline-offset: 2px;
+}
+
+/* Audio player improvements */
+audio {
+    flex: 1;
+    height: 40px;
+    min-width: 250px;
+    border-radius: 20px;
+}
+
+/* Responsive adjustments */
+@media (max-width: 768px) {
+    .nav-buttons {
+        flex-direction: column;
+        align-items: center;
+    }
+    
+    .nav-buttons .btn-primary {
+        width: 100%;
+        justify-content: center;
+        margin-bottom: 1rem;
+    }
+}
